@@ -6,8 +6,10 @@ venv/
 __pycache__/
 *.pyc
 
-# Data
-data/
+# Data folders
+data/raw/
+data/interim/
+data/processed/
 
 # Generated files
 artifacts/
