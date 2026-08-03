@@ -1,0 +1,18 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Data
+data/
+
+# Generated files
+artifacts/
+mlruns/
+
+# Models
+*.pt
+*.pth

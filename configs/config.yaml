@@ -1,0 +1,16 @@
+artifacts_root: artifacts
+
+data:
+  raw_data_path: data/raw
+  interim_data_path: data/interim
+  processed_data_path: data/processed
+
+split:
+  train_ratio: 0.7
+  val_ratio: 0.2
+  test_ratio: 0.1
+
+classes:
+- Blob
+- Underextrusion
+- Sagging
