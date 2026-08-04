@@ -1,5 +1,7 @@
 training:
+  model_type: yolo
   model: yolov8n.pt
+  #model_type: faster_rcnn
   epochs: 100
   batch_size: 16
   image_size: 640
