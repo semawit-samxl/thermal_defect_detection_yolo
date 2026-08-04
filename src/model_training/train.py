@@ -4,8 +4,8 @@ from ultralytics import YOLO
 
 def train_model():
 
-    with open("params.yaml", "r") as file:
-        params = yaml.safe_load(file)
+   with open("configs/params.yaml", "r") as file:
+    params = yaml.safe_load(file)
 
     model = YOLO(params["training"]["model"])
 
