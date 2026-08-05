@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8n.pt
 data: configs/data.yaml
-epochs: 100
+epochs: 200
 time: null
 patience: 20
 batch: 16
@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: '0'
 workers: 8
 project: null
 name: train
@@ -113,5 +113,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: C:\Users\saberhe\OneDrive - Delft University of Technology\Desktop\Thermal
-  Defect Detection Using YOLO\runs\detect\train
+save_dir: /home/semawit/projects/thermal_defect_detection_yolo/runs/detect/train

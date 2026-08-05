@@ -7,7 +7,8 @@ def predict():
 
     results = model.predict(
         source="data/processed/images/test",
-        save=True
+        save=True,
+        conf=0.25
     )
 
     return results
