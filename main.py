@@ -1,6 +1,6 @@
-from src.model_training.train import train_model
-from src.model_prediction.predict import predict
-from src.model_evaluation.evaluate import evaluate
+from src.model_training.train_yolo import train_model
+from src.model_prediction.predict_yolo import predict
+from src.model_evaluation.evaluate_yolo import evaluate
 from src.model_validation.validate import validate
 from src.model_analysis.analyze import analyze
 

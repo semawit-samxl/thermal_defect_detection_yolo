@@ -1,0 +1,40 @@
+artifacts_root: artifacts
+
+data:
+  raw_data_path: data/raw
+  interim_data_path: data/interim
+  processed_data_path: data/processed
+
+split:
+  train_ratio: 0.7
+  val_ratio: 0.2
+  test_ratio: 0.1
+
+classes:
+  - Blob
+  - Underextrusion
+
+training:
+  model_type: faster_rcnn
+
+  epochs: 100
+  batch_size: 16
+
+  image_size: 640
+
+  learning_rate: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+
+  patience: 20
+
+  device: cpu
+
+prediction:
+  confidence_threshold: 0.25
+
+evaluation:
+  iou_threshold: 0.5
+
+validation:
+  min_map50: 0.80
