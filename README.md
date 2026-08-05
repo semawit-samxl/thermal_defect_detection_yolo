@@ -1,4 +1,4 @@
-# Thermal Defect Detection Using YOLO
+# Thermal Defect Detection Using YOLO - Faster R-CNN
 
 ## Project Overview
 
