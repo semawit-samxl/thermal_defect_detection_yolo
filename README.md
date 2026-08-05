@@ -1,8 +1,8 @@
-# Thermal Defect Detection Using YOLO - Faster R-CNN
+# Thermal Defect Detection Using Faster R-CNN
 
 ## Project Overview
 
-This project focuses on detecting  defects in 3D printing processes using YOLO object detection models. Thermal image sequences from multiple print histories are used to identify manufacturing defects such as Blob and Underextrusion.
+This project focuses on detecting  defects in 3D printing processes using faster R-CNN object detection models. Thermal image sequences from multiple print histories are used to identify manufacturing defects such as Blob and Underextrusion.
 
 ## Objectives
 
