@@ -26,13 +26,32 @@ training:
   momentum: 0.9
   weight_decay: 0.0005
   patience: 20
+
   device: cpu
 
-prediction:
-  confidence_threshold: 0.25
+  num_workers: 0
 
 evaluation:
+  batch_size: 1
   iou_threshold: 0.5
 
 validation:
   min_map50: 0.80
+
+prediction:
+  confidence_threshold: 0.25
+
+paths:
+  train_images: data/processed/images/train
+  train_labels: data/processed/labels/train
+
+  val_images: data/processed/images/val
+  val_labels: data/processed/labels/val
+
+  test_images: data/processed/images/test
+  test_labels: data/processed/labels/test
+
+  best_model: models/best_faster_rcnn.pth
+  last_model: models/last_faster_rcnn.pth
+
+  onnx_model: models/faster_rcnn.onnx
