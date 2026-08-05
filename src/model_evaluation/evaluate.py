@@ -10,7 +10,8 @@ def evaluate():
     model = YOLO("runs/detect/train/weights/best.pt")
 
     metrics = model.val(
-        data="configs/data.yaml"
+        data="configs/data.yaml",
+        verbose=True
       )
     mlflow.set_tracking_uri("sqlite:///mlfow.db")
     
