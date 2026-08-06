@@ -3,7 +3,6 @@ path: data/processed
 train: images/train
 val: images/val
 test: images/test
-
 names:
   0: Blob
   1: Underextrusion
