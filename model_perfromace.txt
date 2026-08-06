@@ -1,0 +1,24 @@
+Model summary (fused): 73 layers, 3,006,038 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 110/110 16.7it/s 6.6s
+                   all       3493       1989      0.988      0.989      0.994      0.927
+                  Blob        757       1121      0.977      0.979      0.994      0.877
+        Underextrusion        779        868      0.999      0.999      0.995      0.977
+Speed: 0.1ms preprocess, 0.8ms inference, 0.0ms loss, 0.3ms postprocess per image
+
+
+
+# ##########validatin  set evalaution 
+
+           Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 219/219 23.5it/s 9.3s
+                   all       3493       1989      0.989      0.988      0.994      0.928
+                  Blob        757       1121      0.979      0.977      0.994      0.879
+        Underextrusion        779        868      0.999      0.999      0.995      0.977
+
+        
+
+#####test set  evaluation 
+
+                       Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 110/110 22.6it/s 4.9s
+                   all       1747        928      0.991      0.984      0.994      0.929
+                  Blob        337        483      0.987      0.973      0.994      0.883
+        Underextrusion        398        445      0.996      0.995      0.995      0.975

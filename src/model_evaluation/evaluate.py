@@ -11,7 +11,8 @@ def evaluate():
 
     metrics = model.val(
         data="configs/data.yaml",
-        verbose=True
+        verbose=True,
+        #split="test"
       )
     mlflow.set_tracking_uri("sqlite:///mlfow.db")
     
