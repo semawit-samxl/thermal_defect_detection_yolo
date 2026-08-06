@@ -50,7 +50,10 @@ def evaluate():
     # Load best checkpoint
     checkpoint = torch.load(
         "models/best_faster_rcnn.pth",
-        map_location=device
+        map_location=device,
+        weights_only=False
     )
+
+    
 
  
