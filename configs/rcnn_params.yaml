@@ -1,0 +1,57 @@
+artifacts_root: artifacts
+
+data:
+  raw_data_path: data/raw
+  interim_data_path: data/interim
+  processed_data_path: data/processed
+
+split:
+  train_ratio: 0.7
+  val_ratio: 0.2
+  test_ratio: 0.1
+
+classes:
+  - Blob
+  - Underextrusion
+
+training:
+  model_type: faster_rcnn
+
+  epochs: 100
+  batch_size: 2
+
+  image_size: 640
+
+  learning_rate: 0.0001
+  momentum: 0.9
+  weight_decay: 0.0005
+  patience: 0
+
+  device: 0
+
+  num_workers: 0
+
+evaluation:
+  batch_size: 1
+  iou_threshold: 0.5
+
+validation:
+  min_map50: 0.80
+
+prediction:
+  confidence_threshold: 0.25
+
+paths:
+  train_images: data/processed/images/train
+  train_labels: data/processed/labels/train
+
+  val_images: data/processed/images/val
+  val_labels: data/processed/labels/val
+
+  test_images: data/processed/images/test
+  test_labels: data/processed/labels/test
+
+  best_model: models/best_faster_rcnn.pth
+  last_model: models/last_faster_rcnn.pth
+
+  onnx_model: models/faster_rcnn.onnx
