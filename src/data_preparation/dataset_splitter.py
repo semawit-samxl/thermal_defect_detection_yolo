@@ -49,12 +49,6 @@ splits={
 
 }
 
-# Create YOLO output folders
-splits = {
-    "train": train_images,
-    "val": val_images,
-    "test": test_images
-}
 
 for split_name in splits.keys():
     os.makedirs(f"data/processed/images/{split_name}", exist_ok=True)
